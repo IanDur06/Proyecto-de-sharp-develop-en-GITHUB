@@ -48,6 +48,7 @@ namespace Calculadora
 			this.btnMult = new System.Windows.Forms.Button();
 			this.btnDivision = new System.Windows.Forms.Button();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.btnFormula = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -165,12 +166,24 @@ namespace Calculadora
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// btnFormula
+			// 
+			this.btnFormula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFormula.Location = new System.Drawing.Point(25, 338);
+			this.btnFormula.Name = "btnFormula";
+			this.btnFormula.Size = new System.Drawing.Size(312, 56);
+			this.btnFormula.TabIndex = 12;
+			this.btnFormula.Text = "Formula general";
+			this.btnFormula.UseVisualStyleBackColor = true;
+			this.btnFormula.Click += new System.EventHandler(this.BtnFormulaClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			this.ClientSize = new System.Drawing.Size(577, 389);
+			this.ClientSize = new System.Drawing.Size(577, 418);
+			this.Controls.Add(this.btnFormula);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.btnDivision);
 			this.Controls.Add(this.btnMult);
@@ -188,6 +201,7 @@ namespace Calculadora
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnFormula;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Button btnDivision;
 		private System.Windows.Forms.Button btnMult;

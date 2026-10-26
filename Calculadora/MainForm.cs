@@ -101,5 +101,11 @@ namespace Calculadora
 			    txtResultado.Text = "No se puede dividir entre cero";
 			}
 		}
+		// Version 3: Formula General
+		void BtnFormulaClick(object sender, EventArgs e)
+		{
+			Form2 formulario = new Form2();
+			formulario.ShowDialog();
+		}
 	}
 }
