@@ -83,5 +83,23 @@ namespace Calculadora
 			    txtResultado.Text = "No se puede dividir entre cero";
 			}
 		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+			double n1, n2, resultado;
+
+			n1 = Convert.ToDouble(txtNumero1.Text);
+			n2 = Convert.ToDouble(txtNumero2.Text);
+			
+			if (n2 != 0)
+			{
+			    resultado = n1 % n2;
+			    txtResultado.Text = resultado.ToString();
+			}
+			else
+			{
+			    txtResultado.Text = "No se puede dividir entre cero";
+			}
+		}
 	}
 }
