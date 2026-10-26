@@ -83,7 +83,7 @@ namespace Calculadora
 			    txtResultado.Text = "No se puede dividir entre cero";
 			}
 		}
-		
+		// Version 2: Modulo
 		void BtnModuloClick(object sender, EventArgs e)
 		{
 			double n1, n2, resultado;
