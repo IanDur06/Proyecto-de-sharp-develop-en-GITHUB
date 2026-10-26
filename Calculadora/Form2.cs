@@ -61,5 +61,15 @@ namespace Calculadora
 			    lblX2.Text = "";
 			}
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

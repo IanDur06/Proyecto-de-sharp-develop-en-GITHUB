@@ -46,12 +46,15 @@ namespace Calculadora
 			this.txtA = new System.Windows.Forms.TextBox();
 			this.txtB = new System.Windows.Forms.TextBox();
 			this.txtC = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(25, 19);
+			this.label1.Font = new System.Drawing.Font("Modern No. 20", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Teal;
+			this.label1.Location = new System.Drawing.Point(13, 19);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(473, 78);
 			this.label1.TabIndex = 0;
@@ -60,6 +63,7 @@ namespace Calculadora
 			// labelA
 			// 
 			this.labelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelA.ForeColor = System.Drawing.Color.Teal;
 			this.labelA.Location = new System.Drawing.Point(13, 101);
 			this.labelA.Name = "labelA";
 			this.labelA.Size = new System.Drawing.Size(174, 36);
@@ -69,6 +73,7 @@ namespace Calculadora
 			// labelB
 			// 
 			this.labelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelB.ForeColor = System.Drawing.Color.Teal;
 			this.labelB.Location = new System.Drawing.Point(13, 156);
 			this.labelB.Name = "labelB";
 			this.labelB.Size = new System.Drawing.Size(174, 36);
@@ -78,6 +83,7 @@ namespace Calculadora
 			// labelC
 			// 
 			this.labelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelC.ForeColor = System.Drawing.Color.Teal;
 			this.labelC.Location = new System.Drawing.Point(12, 209);
 			this.labelC.Name = "labelC";
 			this.labelC.Size = new System.Drawing.Size(174, 36);
@@ -86,7 +92,8 @@ namespace Calculadora
 			// 
 			// btnCalcular
 			// 
-			this.btnCalcular.Location = new System.Drawing.Point(13, 286);
+			this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCalcular.Location = new System.Drawing.Point(13, 277);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(103, 85);
 			this.btnCalcular.TabIndex = 4;
@@ -97,7 +104,7 @@ namespace Calculadora
 			// lblX1
 			// 
 			this.lblX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblX1.Location = new System.Drawing.Point(166, 286);
+			this.lblX1.Location = new System.Drawing.Point(154, 277);
 			this.lblX1.Name = "lblX1";
 			this.lblX1.Size = new System.Drawing.Size(174, 36);
 			this.lblX1.TabIndex = 5;
@@ -106,7 +113,7 @@ namespace Calculadora
 			// lblX2
 			// 
 			this.lblX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblX2.Location = new System.Drawing.Point(166, 335);
+			this.lblX2.Location = new System.Drawing.Point(154, 326);
 			this.lblX2.Name = "lblX2";
 			this.lblX2.Size = new System.Drawing.Size(174, 36);
 			this.lblX2.TabIndex = 6;
@@ -114,34 +121,58 @@ namespace Calculadora
 			// 
 			// txtA
 			// 
-			this.txtA.Location = new System.Drawing.Point(182, 100);
+			this.txtA.Location = new System.Drawing.Point(177, 100);
 			this.txtA.Multiline = true;
 			this.txtA.Name = "txtA";
-			this.txtA.Size = new System.Drawing.Size(187, 36);
+			this.txtA.Size = new System.Drawing.Size(136, 36);
 			this.txtA.TabIndex = 7;
 			// 
 			// txtB
 			// 
-			this.txtB.Location = new System.Drawing.Point(182, 156);
+			this.txtB.Location = new System.Drawing.Point(177, 156);
 			this.txtB.Multiline = true;
 			this.txtB.Name = "txtB";
-			this.txtB.Size = new System.Drawing.Size(187, 36);
+			this.txtB.Size = new System.Drawing.Size(136, 36);
 			this.txtB.TabIndex = 8;
 			// 
 			// txtC
 			// 
-			this.txtC.Location = new System.Drawing.Point(182, 209);
+			this.txtC.Location = new System.Drawing.Point(177, 209);
 			this.txtC.Multiline = true;
 			this.txtC.Name = "txtC";
-			this.txtC.Size = new System.Drawing.Size(187, 36);
+			this.txtC.Size = new System.Drawing.Size(136, 36);
 			this.txtC.TabIndex = 9;
+			// 
+			// button1
+			// 
+			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(13, 369);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(103, 40);
+			this.button1.TabIndex = 10;
+			this.button1.Text = "Cerrar";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// button2
+			// 
+			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.Location = new System.Drawing.Point(13, 415);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(103, 40);
+			this.button2.TabIndex = 11;
+			this.button2.Text = "Volver";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.ClientSize = new System.Drawing.Size(498, 465);
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+			this.ClientSize = new System.Drawing.Size(412, 458);
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.txtC);
 			this.Controls.Add(this.txtB);
 			this.Controls.Add(this.txtA);
@@ -157,6 +188,8 @@ namespace Calculadora
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.TextBox txtC;
 		private System.Windows.Forms.TextBox txtB;
 		private System.Windows.Forms.TextBox txtA;
